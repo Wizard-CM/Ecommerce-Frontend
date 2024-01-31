@@ -1,0 +1,21 @@
+.global-container{
+    >h2{
+        text-align: center;
+        font-size: 3rem;
+        margin: 3rem 0;
+        font-weight: 100;
+    }
+    .order-page{
+        padding: 10px 30px;
+        table{
+            th{
+                padding: 2rem 2rem;
+            }
+            tbody{
+                td{
+                    padding: 2rem 2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,189 @@
+@use "Variables";
+
+.outlet {
+  .product-page {
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    > h2 {
+      text-align: center;
+      margin: 2rem;
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    table {
+      th {
+        padding: 2rem 2rem;
+      }
+      tbody {
+        td {
+          padding: 2rem 2rem;
+        }
+      }
+      img{
+        height: 6rem;
+        width: 6rem;
+      }
+    }
+    > a {
+      position: fixed;
+      top: 5rem;
+      right: 5rem;
+      background-color: rgba(255, 102, 31, 0.468);
+      padding: 0.9rem 1.2rem;
+      color: #fff;
+      border-radius: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 99;
+      cursor: pointer;
+    }
+  }
+  // Product Mangament
+  .product-management , .transaction-management {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+
+    > div {
+      min-height: 36rem;
+      width: 100%;
+      max-width: 400px;
+      background-color: #fff;
+    }
+    .product-management-left , .transaction-management-left {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 4rem;
+      .stock {
+        position: absolute;
+        background-color: rgba(53, 53, 239, 0.568);
+        padding: 0.5rem 1.5rem;
+        top: 20px;
+        right: 20px;
+        color: #fff;
+        border-radius: 1rem;
+      }
+      p {
+        margin: 1rem 0;
+      }
+      .image {
+        flex-grow: 1;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+        gap: 1rem;
+        > span {
+          font-size: 1.2rem;
+          font-weight: 200;
+        }
+        > h3 {
+          font-size: 2rem;
+        }
+      }
+    }
+    .product-management-right , .transaction-management-right {
+      padding: 0 2rem;
+      h2 {
+        text-align: center;
+        margin: 2rem 0;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        input {
+          width: 100%;
+          padding: 1rem 1.5rem;
+          outline: none;
+          border: 1px solid rgba(128, 128, 128, 0.363);
+        }
+        >button{
+          width: 70%;
+          margin: auto;
+          outline: none;
+          border: none;
+          border-radius: 0.3rem;
+          background-color: #8C8CF6;
+          padding: 0.6rem 1.5rem;
+          font-size: 1.2rem;
+          color: #fff;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+    .product-management-right {
+      position: relative;
+      >button{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: red;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+    }
+  }
+  // New Product
+  .new-product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .form-container {
+      min-height: 36rem;
+      width: 100%;
+      max-width: 400px;
+      background-color: #fff;
+      padding: 1rem 3rem;
+      > h2 {
+        margin: 2rem 0;
+        font-size: 2.5rem;
+        font-weight: 500;
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        > button {
+          outline: none;
+          border: none;
+          background-color: rgba(48, 48, 255, 0.432);
+          padding: 0.7rem 1.5rem;
+          font-size: 1.5rem;
+          color: #fff;
+          border-radius: 0.3rem;
+          margin-bottom: 0.5rem;
+        }
+
+        > label {
+          display: flex;
+          flex-direction: column;
+          > input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            outline: none;
+            border: 1px solid rgba(128, 128, 128, 0.363);
+          }
+        }
+      }
+    }
+  }
+}

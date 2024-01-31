@@ -1,0 +1,276 @@
+@media (max-width: 1250px) {
+  // Admin Mediaqueries
+  .widget-item-container {
+    justify-content: center !important;
+    gap: 2rem !important;
+  }
+}
+@media (max-width: 1100px) {
+  // Product Management and Transaction Management
+
+  .product-management,
+  .transaction-management {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  // Orders Page
+  .order-page {
+    padding: 10px 10px !important;
+    table {
+      th {
+        padding: 2rem 1.4rem !important;
+      }
+      tbody {
+        td {
+          padding: 2rem 1.4rem !important;
+        }
+      }
+    }
+  }
+
+  // Cart Page
+  .cart-page {
+    padding: 0 !important;
+    margin-top: 6rem;
+    .cart-page-container {
+      flex-direction: column !important;
+      padding: 3rem;
+      gap: 3rem;
+
+      .cart-page-left {
+        width: 100% !important;
+        margin-bottom: 1rem;
+        .cart-item {
+          width: 100% !important;
+          .cart-item-left {
+          }
+        }
+      }
+      .cart-page-right {
+        margin-top: 2rem;
+        margin-left: auto;
+      }
+    }
+  }
+  // Search Page
+  .search-page {
+    gap: 2rem;
+    .search-page-left {
+      min-width: 18rem !important;
+      height: fit-content;
+    }
+    .search-page-right {
+      width: 65% !important;
+      // justify-content: center !important;
+      // align-items: center !important;
+      input {
+        width: 80% !important;
+      }
+      .product-container {
+        justify-content: space-evenly !important;
+        align-items: center;
+      }
+    }
+  }
+
+  // Admin Mediaqueries
+  .adminContainer {
+    padding: 0 !important;
+  }
+  .dashboard-mid-chart {
+    flex-direction: column !important;
+    align-items: center !important;
+    .dashboard-mid-chart-left {
+      width: 100% !important;
+      margin: 1.4rem 0;
+      height: auto !important;
+    }
+    .dashboard-mid-chart-right {
+      width: 50% !important;
+      margin: 1.4rem 0;
+      height: 400px !important;
+
+      padding-bottom: 3rem !important;
+    }
+  }
+  .dashboard-bottom-table {
+    flex-direction: column !important;
+    align-items: center;
+    .dashboard-bottom-table-left {
+      width: 50% !important;
+      margin-bottom: 1rem;
+    }
+    .dashboard-bottom-table-right {
+      width: 100% !important;
+      margin: 1rem 0;
+    }
+  }
+
+  main {
+    .adminContainer {
+      display: flex !important;
+      flex-direction: column;
+      .adminSideBar {
+        position: fixed;
+        width: 30% !important;
+        height: 100vh;
+        top: 0;
+        left: 100%;
+        z-index: 7;
+        background-color: #fff;
+      }
+      .outlet {
+        padding: 1rem !important;
+        > h2 {
+          font-size: 2.3rem;
+        }
+        .customer-section,
+        .transaction-section {
+          table {
+            th {
+              padding: 2rem 1.2rem;
+            }
+            tbody {
+              td {
+                padding: 2rem 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  // Orders Page
+  .order-page {
+    padding: 10px 10px !important;
+    overflow-x: auto;
+    table {
+      th {
+        padding: 2rem 1.2rem !important;
+      }
+      tbody {
+        td {
+          padding: 2rem 1.2rem !important;
+        }
+      }
+    }
+  }
+
+  // Search Page
+  .search-page {
+    flex-direction: column !important;
+    align-items: center;
+
+    .search-page-left {
+      width: 60% !important;
+    }
+    .search-page-right {
+      width: 100% !important;
+      > h2 {
+        margin-top: 2rem;
+      }
+    }
+  }
+  // Admin Mediaqueries
+  main {
+    .adminContainer {
+      .adminSideBar {
+        width: 40% !important;
+      }
+      .outlet {
+        padding: 1rem !important;
+        .product-page,
+        .customer-section,
+        .transaction-section {
+          overflow-x: auto;
+          table {
+            th {
+              padding: 2rem 1.2rem;
+            }
+            tbody {
+              td {
+                padding: 2rem 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .latest-products-container {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  // Bar Chart Page and Pie Chart Page
+  .bar-chart-container {
+    .chartItem {
+      > h3 {
+        font-size: 1.3rem !important;
+      }
+    }
+  }
+  .line-chart-container {
+    .line-chart-item {
+      > h3 {
+        font-size: 1.3rem !important;
+      }
+    }
+  }
+
+  // Cart Page
+  .cart-page {
+    .cart-page-container {
+      padding: 1rem;
+      .cart-page-left {
+        gap: 2.5rem !important;
+        .cart-item {
+          flex-wrap: wrap;
+          padding-left: 1.5rem !important;
+          gap: 1.5rem !important;
+        }
+      }
+    }
+  }
+
+  .shipping-page {
+    form {
+      h2 {
+        font-size: 1.5rem !important;
+      }
+      input,
+      select {
+        width: 80% !important;
+      }
+      button {
+        width: 50% !important;
+      }
+    }
+  }
+  // Admin Mediaqueries
+  .dashboard-mid-chart {
+    .dashboard-mid-chart-right {
+      width: 60% !important;
+    }
+  }
+  .dashboard-bottom-table {
+    .dashboard-bottom-table-left {
+      width: 60% !important;
+    }
+    .dashboard-bottom-table-right {
+      overflow-x: auto;
+    }
+  }
+  main {
+    .adminContainer {
+      .adminSideBar {
+        width: 50% !important;
+      }
+    }
+  }
+}

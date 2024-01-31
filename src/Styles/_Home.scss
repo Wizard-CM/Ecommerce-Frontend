@@ -1,0 +1,146 @@
+.navbar {
+  padding: 10px 30px;
+  width: 100%;
+  background-color: #11060bbf;
+  height: 4rem;
+  position: relative;
+  .nav-items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    gap: 1.5rem;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.3rem;
+    }
+    > span {
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.3rem;
+      }
+      svg {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.3rem;
+      }
+    }
+    .dialog-wrapper {
+      position: absolute;
+      top: 3.2rem;
+      right: 6.5rem;
+      
+      dialog {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: none;
+        box-shadow: 3px 3px 15px #0000005e;
+        a {
+          color: #000;
+          font-size: 1.2rem;
+        }
+        button {
+          outline: none;
+          border: none;
+          color: #000;
+          background: transparent;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+.global-container {
+  height: calc(100vh );
+
+  .home-page {
+    height: 100%;
+    width: 100%;
+    > section {
+      padding: 10px 30px;
+      height: 100%;
+      width: 100%;
+      background-image: url("../Data/Default_a_beautiful_shoes_website_nikeuiuxorangewhite_0_c35aaeb7-4edc-4cba-9a18-547bd8261816_1.jpg");
+      background-size: cover;
+      background-position: center center;
+    }
+    .product-display {
+      padding: 10px 30px;
+      width: 100%;
+      .product-display-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem 0;
+        > a {
+          text-decoration: none;
+          color: #000;
+          text-align: right;
+        }
+        > h2 {
+          font-size: 2.5rem;
+          font-weight: 500;
+        }
+      }
+      .latest-products-container {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+.latest-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+  gap: 0.7rem;
+  > div {
+    img {
+      width: 18rem;
+      height: 18rem;
+      object-fit: cover;
+    }
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #00000039;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    > button {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      outline: none;
+      border: none;
+      height: 3.5rem;
+      width: 3.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: rgb(42, 239, 239);
+      color: #fff;
+      > svg {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &:hover .overlay {
+    display: block;
+  }
+}

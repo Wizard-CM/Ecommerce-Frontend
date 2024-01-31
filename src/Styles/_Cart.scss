@@ -1,0 +1,129 @@
+.global-container{
+    .cart-page{
+        padding: 10px 30px;
+        display: flex;
+        min-height: calc(100vh - 65px);
+        align-items: center;
+.cart-page-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .cart-page-left{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    
+        h2{
+            font-size: 4rem;
+            font-weight: 400;
+            text-align: center;
+        }
+        .cart-item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+    
+            .cart-item-left{
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+    
+                img{
+                    height: 100px;
+                    width: 100px;
+                    object-fit: cover;
+                }
+                .cart-item-info{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.2rem;
+                    h4{
+                        
+                        font-size: 1.1rem;
+                        color: #00000074;
+                        font-weight: 300;
+                    }
+                    span{
+                        font-size: 1.2rem;
+                        font-weight: 700;
+    
+                    }
+    
+                }
+                
+            }
+            .cart-item-right{
+                align-items: center;
+                display: flex;
+                gap: 1rem;
+                .quantity{
+                    font-size: 1.3rem;
+                    margin: 0 .5rem;
+                }
+                button{
+                    outline: none;
+                    padding: 0.5rem 1rem;
+                    border: none;
+                }
+                .operators{
+                    background-color: #AEAEFF;
+                    color: #fff;
+                    font-size: 1.3rem;
+                    border-radius: 0.2rem;
+    
+                }
+                .delete{
+                    font-size: 1.3rem;
+                    color: red;
+                    background-color: transparent !important;
+                    
+                }
+            }
+        }
+    
+    }
+    .cart-page-right{
+        width: 25%;
+        min-width: 15rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.7rem;
+    
+        p{
+            font-size: 1.2rem;
+            span{
+                margin-left: 0.2rem;
+            }
+        }
+        h3{
+            font-size: 2rem;
+        }
+        input{
+            width: 75%;
+            padding: 0.6rem 1rem;
+        }
+        button{
+            background-color: #AEAEFF;
+            padding: 0.6rem 1.3rem;
+            border-radius: 1rem;
+            width: 60%;
+            outline: none;
+            border: none;
+            a{
+                text-decoration: none;
+                font-size: 1.2rem;
+                color: #fff;
+            }
+        }
+    
+    }
+}
+
+
+
+    }
+
+}
