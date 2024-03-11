@@ -10,36 +10,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import Loader from "../../../Components/Loader";
 import ToasterFunction from "../../../Components/Toaster";
 
-// const defaultData = {
-//   shippingInfo: {
-//     address: "",
-//     city: "",
-//     state: "",
-//     country: "",
-//     pinCode: "",
-//   },
-//   status: "",
-//   subtotal: 0,
-//   discount: 0,
-//   shippingCharges: 0,
-//   tax: 0,
-//   total: 0,
-//   orderItems: [],
-//   user: { name: "", _id: "" },
-//   _id: "",
-// };
-
 const TransactionManagement = () => {
-  // const {
-  //   shippingInfo: { address, city, state, country, pinCode },
-  //   user: { name },
-  //   status,
-  //   tax,
-  //   subtotal,
-  //   total,
-  //   discount,
-  //   shippingCharges,
-  // } = defaultData;
   const { user } = useSelector((state: rootState) => state.userSlice);
   const { id } = useParams();
   const { data, isLoading } = useSingleOrderQuery({
@@ -48,13 +19,13 @@ const TransactionManagement = () => {
   });
   const [deleteOrder] = useDeleteOrderMutation();
   const [updateOrder] = useUpdateOrderMutation();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   // Handlers
   const deleteHandler = async () => {
     const res = await deleteOrder({ orderId: id!, id: user?._id! });
     ToasterFunction(res, "Order Successfully Deleted");
-    return navigate("/admin/transaction")
+    return navigate("/admin/transaction");
   };
   const updateHandler = async () => {
     const res = await updateOrder({ orderId: id!, id: user?._id! });
@@ -76,11 +47,11 @@ const TransactionManagement = () => {
                 return (
                   <div className="transaction-item">
                     <img
-                      src={`${import.meta.env.VITE_BACKEND_SERVER}/${i.photo}`}
+                      src={`${import.meta.env.VITE_BACKEND_SERVER}/${i?.photo}`}
                       alt=""
                     />
-                    <p>{i.name}</p>
-                    <span>Price : {i.price}</span>
+                    <p>{i?.name}</p>
+                    <span>Price : {i?.price}</span>
                   </div>
                 );
               })}
